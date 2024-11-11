@@ -25,5 +25,4 @@ import Logo from './LogoComponent.vue';
 </script>
 
 <style scoped>
-/* Ajoute tes styles spécifiques ici si besoin */
 </style>

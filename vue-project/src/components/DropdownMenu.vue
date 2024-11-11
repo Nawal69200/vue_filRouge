@@ -28,5 +28,4 @@ export default {
 </script>
 
 <style scoped>
-/* Ajoutez des styles si nécessaire */
 </style>

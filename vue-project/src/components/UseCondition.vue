@@ -3,7 +3,7 @@
       <div class="row my-5">
         <div class="col-lg-8 mx-auto">
           <div class="bg-light p-4 rounded shadow-sm">
-            <h1 class="text-center mb-4 bg-secondary text-white p-2">Conditions d'Utilisation</h1>
+            <h1 class="text-center mb-4 bg-secondary">Conditions d'Utilisation</h1>
             <p>Bienvenue sur Recettes X. En utilisant notre site, vous acceptez pleinement et sans réserve les conditions d'utilisation énoncées ci-après.</p>
   
             <h2>Accès au Site</h2>

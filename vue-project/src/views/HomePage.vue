@@ -9,9 +9,8 @@
     <!-- Recette de la semaine -->
     <RecipeCard :recipe="recipeOfTheWeek" />
 
-    <!-- Carousel et catégories de recettes -->
-    <Carousel :slides="carouselSlides" />
-
+     <!-- Carousel et catégories de recettes -->
+     <AppCarousel :slides="carouselSlides" /> 
     <div class="container my-5">
       <div class="row text-center">
         <RecipeCategoryCard
@@ -66,7 +65,7 @@
 <script>
 import RecipeCard from '@/components/RecipeCard.vue';
 import LastRecipe from '@/components/LastRecipe.vue';
-import Carousel from '@/components/Carousel.vue';
+import AppCarousel from '@/components/AppCarousel.vue';
 import RecipeCategoryCard from '@/components/RecipeCategoryCard.vue';
 import VideoPlayer from '@/components/VideoPlayer.vue';
 import RecipeCardSection from '@/components/RecipeCardSection.vue';
@@ -87,10 +86,10 @@ import burgerImage from '@/assets/burger.jpg';
 import saladePouletImage from '@/assets/salade_poulet-grille.jpg';
 
 export default {
-  name: 'HomePage', 
+  name: 'HomePage',
   components: {
     RecipeCard,
-    Carousel,
+    AppCarousel,
     RecipeCategoryCard,
     VideoPlayer,
     RecipeCardSection,
@@ -114,21 +113,21 @@ export default {
           alt: 'Les noix',
           title: 'Pourquoi devrait-on manger davantage de noix ?',
           description: 'Les noix sont riches en acides gras oméga-3, bénéfiques pour la santé cardiovasculaire.',
-          link: '/carousel/noix'
+          link: '/noix'
         },
         {
           image: avocatsImage,
           alt: 'Les avocats',
           title: 'Les bienfaits des avocats',
           description: 'Les avocats contiennent des fibres, aidant à la digestion.',
-          link: '/carousel/avocats'
+          link: '/avocat'
         },
         {
           image: pimentsImage,
           alt: 'Les piments',
           title: 'Les vertus du piment',
           description: 'Les piments possèdent des propriétés anti-inflammatoires.',
-          link: '/carousel/piments'
+          link: '/piments'
         }
       ],
       recipeCategories: [
@@ -219,10 +218,5 @@ export default {
   }
 };
 </script>
-
-
 <style scoped>
-.container {
-  max-width: 1200px;
-}
 </style>

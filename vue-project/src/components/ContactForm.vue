@@ -7,32 +7,34 @@
       
       <!-- Champ Nom d'utilisateur -->
       <div class="mb-3">
-        <label for="name" class="form-label">Nom d'utilisateur</label>
+        <label for="name" class="form-label">Nom d'utilisateur <span class="required">*</span></label>
         <input v-model="form.name" type="text" class="form-control" id="name" name="name" autocomplete="name" required />
       </div>
       
       <!-- Champ Email -->
       <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
+        <label for="email" class="form-label">Email <span class="required">*</span></label>
         <input v-model="form.email" type="email" class="form-control" id="email" name="email" autocomplete="email" required />
       </div>
       
       <!-- Champ Sujet -->
       <div class="mb-3">
-        <label for="subject" class="form-label">Sujet</label>
+        <label for="subject" class="form-label">Sujet <span class="required">*</span></label>
         <input v-model="form.subject" type="text" class="form-control" id="subject" name="subject" autocomplete="off" required />
       </div>
       
       <!-- Champ Message -->
       <div class="mb-3">
-        <label for="message" class="form-label">Message</label>
+        <label for="message" class="form-label">Message <span class="required">*</span></label>
         <textarea v-model="form.message" class="form-control" id="message" name="message" rows="5" autocomplete="off" required></textarea>
       </div>
       
       <!-- Bouton de soumission -->
+      <!-- Bouton de soumission -->
       <div class="text-center">
-        <button type="submit" class="btn btn-primary btn-lg w-100">Envoyer</button>
+        <button type="submit" class="btn btn-primary btn-lg custom-btn w-100">Envoyer</button>
       </div>
+
     </form>
     
     <!-- Affichage des messages d'erreur -->
@@ -106,8 +108,10 @@ export default {
   margin-bottom: 3rem;
 }
 
-.btn-lg {
-  padding: 1rem;
+/* Ajustement de la hauteur du bouton */
+.custom-btn {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .text-center {
@@ -125,5 +129,11 @@ export default {
 
 .text-danger li {
   font-size: 14px;
+}
+
+/* Style pour l'astérisque rouge */
+.required {
+  color: red;
+  font-weight: bold;
 }
 </style>

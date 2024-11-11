@@ -3,7 +3,7 @@
       <div class="row my-5">
         <div class="col-lg-8 mx-auto">
           <div class="bg-light p-4 rounded shadow-sm">
-            <h1 class="text-center mb-4 bg-secondary text-white p-2">Politique de Confidentialité</h1>
+            <h1 class="text-center mb-4 bg-secondary">Politique de Confidentialité</h1>
             <p>Bienvenue sur le site Recettes X. Nous attachons une grande importance à la confidentialité de vos informations personnelles et cet avis décrit nos pratiques en matière de confidentialité.</p>
   
             <h2>Collecte des Informations</h2>
@@ -47,30 +47,5 @@
   </script>
   
   <style scoped>
-  /* Style pour la section principale */
-  main {
-    background-color: #f9f9f9;
-  }
-  
-  .bg-light {
-    background-color: #f8f9fa !important;
-  }
-  
-  h1 {
-    font-family: 'Playfair Display', serif;
-  }
-  
-  p, h2 {
-    color: #333;
-  }
-  
-  ul {
-    list-style-type: disc;
-    padding-left: 1.5em;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
   </style>
   

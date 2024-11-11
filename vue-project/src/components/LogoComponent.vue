@@ -11,5 +11,4 @@ import logoSrc from '@/assets/logo.png';
 </script>
 
 <style scoped>
-/* Add any specific styles for the logo component */
 </style>

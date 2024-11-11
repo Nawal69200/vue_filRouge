@@ -6,7 +6,10 @@
         Ce site utilise des cookies pour améliorer votre expérience.
         <a href="/politique-de-confidentialité" target="_blank">En savoir plus</a>.
       </p>
-      <button @click="acceptCookies" class="btn btn-primary">Accepter</button>
+      <div>
+        <button @click="acceptCookies" class="btn btn-primary">Accepter</button>
+        <button @click="refuseCookies" class="btn btn-secondary">Refuser</button>
+      </div>
     </div>
   </div>
 </template>
@@ -26,6 +29,10 @@ export default {
       Cookies.set("cookie-consent", "true", { expires: 365 });
       this.showBanner = false; // Cache la bannière après consentement
     },
+    refuseCookies() {
+      Cookies.set("cookie-consent", "false", { expires: 365 });
+      this.showBanner = false; // Cache la bannière après refus
+    },
   },
 };
 </script>
@@ -44,5 +51,6 @@ export default {
 
 .cookie-banner .btn {
   margin-top: 10px;
+  margin-right: 10px;
 }
 </style>

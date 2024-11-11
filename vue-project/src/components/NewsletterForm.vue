@@ -11,7 +11,7 @@
       Recevez nos dernières recettes directement dans votre boîte mail.
     </label>
     <div class="input-group mb-3">
-      <input
+      <input 
         type="email"
         class="form-control"
         id="email"

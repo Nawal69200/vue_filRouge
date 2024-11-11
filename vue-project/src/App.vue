@@ -51,7 +51,6 @@
 
     <!-- Main Content Area -->
     <main>
-      <VideoPlayer />
       <router-view />
     </main>
 
@@ -59,7 +58,9 @@
     <VueCookieBanner />
 
     <!-- Footer -->
-    <footer />
+    <footer>
+      <FooterPage />
+    </footer>
   </div>
 </template>
 
@@ -68,8 +69,8 @@
 import DropdownMenu from '@/components/DropdownMenu.vue';
 import SearchButton from '@/components/SearchButton.vue';
 import VueCookieBanner from '@/components/VueCookieBanner.vue'; 
-import VideoPlayer from '@/components/VideoPlayer.vue';
 import LogoComponent from '@/components/LogoComponent.vue';
+import FooterPage from './components/FooterPage.vue';
 
 export default {
   name: 'AppComponent',
@@ -77,12 +78,21 @@ export default {
     DropdownMenu,
     SearchButton,
     VueCookieBanner,
-    VideoPlayer,
     LogoComponent,
+    FooterPage
   },
 };
 </script>
 
 <style scoped>
-/* Ajoutez des styles spécifiques pour le composant App si nécessaire */
+/* Style global pour supprimer le soulignement et changer la couleur des liens */
+router-link {
+  text-decoration: none;  /* Supprime le soulignement */
+  color: #333333;;         /* Hérite de la couleur du texte */
+}
+
+router-link:hover {
+  color: #FFFFFF; /* Une couleur personnalisée pour le survol */
+  text-decoration: underline; /* Ajouter un soulignement au survol si souhaité */
+}
 </style>
