@@ -19,34 +19,9 @@ export default {
     acceptText: { type: String, default: 'Accepter' },
     declineText: { type: String, default: 'Refuser' },
     expires: { type: Number, default: 365 } // Durée du consentement en jours
-  },
-  data() {
-    return { consentGiven: false };
-  },
-  created() {
-    this.checkConsent();
-  },
-  methods: {
-    checkConsent() {
-      const consent = Cookies.get('user_cookie_consent');
-      if (consent === 'accepted') {
-        this.consentGiven = true;
-      } else {
-        this.consentGiven = false;
-      }
-    },
-    acceptCookies() {
-      const isProduction = process.env.NODE_ENV === 'production';
-      Cookies.set('user_cookie_consent', 'accepted', { expires: this.expires, sameSite: 'None', secure: isProduction });
-      this.consentGiven = true;
-    },
-    declineCookies() {
-      const isProduction = process.env.NODE_ENV === 'production';
-      Cookies.set('user_cookie_consent', 'declined', { expires: this.expires, sameSite: 'None', secure: isProduction });
-      this.consentGiven = true;
-    }
   }
-};
+    
+
 </script>
 
 <style scoped>
