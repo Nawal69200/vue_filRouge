@@ -2,42 +2,33 @@
   <div class="recipe-details container my-5">
     <div class="row">
       <!-- Titre de la recette -->
-      <RecipeTitle :title="currentRecipe.title" />
+      <RecipeTitle :title="currentRecipe?.title || 'Chargement...'" />
 
       <!-- Onglet image avec RecipeImage -->
-      <RecipeImage :imageSrc="currentRecipe.image" :altText="currentRecipe.title" />
+      <RecipeImage :imageSrc="currentRecipe?.image" :altText="currentRecipe?.title || 'Recette' " />
 
       <!-- Étoiles et avis -->
-      <RecipeReviews :rating="currentRecipe.rating" :totalReviews="currentRecipe.reviews" />
+      <RecipeReviews :rating="currentRecipe?.rating" :totalReviews="currentRecipe?.reviews" />
     </div>
 
     <!-- Section principale en deux colonnes -->
     <div class="row">
-      <!-- Colonne gauche : Détails de la recette -->
       <div class="col-lg-8 col-md-12">
-        <!-- Description des étapes de la recette -->
-        <StepDescription :steps="currentRecipe.steps" />
+        <StepDescription :steps="currentRecipe?.steps" />
       </div>
 
-      <!-- Colonne droite : Ingrédients et Informations -->
       <div class="col-lg-4 col-md-12 mt-4 mt-md-0">
-        <!-- Onglet Ingrédients -->
-        <Ingredient :ingredients="currentRecipe.ingredients" />
-
-        <!-- Informations de la recette -->
+        <Ingredient :ingredients="currentRecipe?.ingredients" />
         <Informations 
-          :prepTime="currentRecipe.prepTime"
-          :cookTime="currentRecipe.cookTime"
-          :servings="currentRecipe.servings"
-          :favoritesLink="currentRecipe.favoritesLink"
+          :prepTime="currentRecipe?.prepTime"
+          :cookTime="currentRecipe?.cookTime"
+          :servings="currentRecipe?.servings"
+          :favoritesLink="currentRecipe?.favoritesLink"
           @add-to-favorites="addToFavorites" />
       </div>
     </div>
 
-    <!-- Section des Commentaires -->
     <Comments />
-
-    <!-- Formulaire de commentaire -->
     <div class="comment-form-section mt-5">
       <CommentForm @comment-submitted="addComment" />
     </div>
@@ -50,7 +41,6 @@ import CommentForm from './CommentForm.vue';
 import Comments from './Comments.vue';
 import RecipeImage from './RecipeImage.vue';
 import RecipeTitle from './RecipeTitle.vue';
-import StepTitle from './StepTitle.vue';
 import RecipeReviews from './RecipeReviews.vue';
 import Ingredient from './Ingredient.vue';
 import Informations from './Informations.vue';
@@ -67,10 +57,11 @@ export default {
     RecipeReviews,
     Ingredient,
     Informations,
-    StepTitle
   },
   data() {
     return {
+      currentRecipeIndex: 0,  // Index de la recette actuellement sélectionnée
+
       recipes: [
         {
           title: 'Boeuf sauté aux légumes et graines de sésame',
@@ -79,7 +70,7 @@ export default {
           prepTime: 20,
           cookTime: 15,
           servings: 4,
-          image: new URL('@/assets/boeuf_saute.jpg', import.meta.url).href,
+          image: '@/assets/boeuf_saute.jpg',
           favoritesLink: '/favorites',
           ingredients: [
             '500g de bœuf (type sauté)',
@@ -374,13 +365,12 @@ export default {
       }
       
   },
-
-  currentRecipeIndex: 0, // Index de la recette actuellement sélectionnée
-  
+   
   computed: {
     currentRecipe() {
-      return this.recipes[this.currentRecipeIndex];
-    }
+      // Vérifier si l'index est valide
+      return this.recipes[this.currentRecipeIndex] || {}; // Si la recette n'existe pas, retourne un objet vide
+    },
   },
   methods: {
     addComment(commentData) {
@@ -397,13 +387,12 @@ export default {
       window.print();
     },
     switchRecipe(index) {
-      this.currentRecipeIndex = index;
+      if (index >= 0 && index < this.recipes.length) {
+        this.currentRecipeIndex = index;
+      }
     },
     addToFavorites() {
-      // Récupérer les favoris depuis localStorage
       let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-
-      // Vérifier si la recette est déjà dans les favoris
       if (!favorites.some(fav => fav.title === this.currentRecipe.title)) {
         favorites.push(this.currentRecipe);
         localStorage.setItem('favorites', JSON.stringify(favorites));
