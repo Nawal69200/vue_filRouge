@@ -30,7 +30,7 @@
     </div>
 
     <!-- Vidéo du jour -->
-    <Video />
+    <VideoPlayer />
 
     <!-- Sections de recettes -->
     <RecipeCardSection
@@ -68,7 +68,7 @@ import RecipeCard from '@/components/RecipeCard.vue';
 import LastRecipe from '@/components/LastRecipe.vue';
 import Carousel from '@/components/Carousel.vue';
 import RecipeCategoryCard from '@/components/RecipeCategoryCard.vue';
-import Video from '@/components/Video.vue';
+import VideoPlayer from '@/components/VideoPlayer.vue';
 import RecipeCardSection from '@/components/RecipeCardSection.vue';
 import NewsletterForm from '@/components/NewsletterForm.vue';
 
@@ -87,12 +87,12 @@ import burgerImage from '@/assets/burger.jpg';
 import saladePouletImage from '@/assets/salade_poulet-grille.jpg';
 
 export default {
-  name: 'Home',
+  name: 'HomePage', 
   components: {
     RecipeCard,
     Carousel,
     RecipeCategoryCard,
-    Video,
+    VideoPlayer,
     RecipeCardSection,
     NewsletterForm,
     LastRecipe
@@ -219,6 +219,7 @@ export default {
   }
 };
 </script>
+
 
 <style scoped>
 .container {

@@ -1,7 +1,8 @@
+// Importation du Vue Router pour Vue 3
 import { createRouter, createWebHistory } from 'vue-router';
 
 // Importation des vues (pages principales)
-import Home from '@/views/Home.vue';
+import HomePage from '@/views/HomePage.vue';
 import Events from '@/views/Events.vue';
 import GalleryPhotos from '@/views/GalleryPhotos.vue';
 import Favorites from '@/views/Favorites.vue';
@@ -18,7 +19,7 @@ import Inscription from '@/views/Inscription.vue';
 // Définition des routes
 const routes = [
   // Routes principales
-  { path: '/', name: 'home', component: Home },
+  { path: '/', name: 'homePage', component: HomePage },
   { path: '/accueil', redirect: '/' },
   { path: '/evenements', name: 'evenements', component: Events },
   { path: '/gallerie_photos', name: 'gallerie_photos', component: GalleryPhotos },

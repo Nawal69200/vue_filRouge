@@ -1,3 +1,4 @@
+<!-- LogoComponent.vue -->
 <template>
   <router-link to="/" class="navbar-brand">
     <img :src="logoSrc" alt="logo" />
@@ -5,10 +6,10 @@
 </template>
 
 <script setup>
-// Importation du chemin de l'image
-import logoSrc from '@/components/icons/logo.png';
+// Import the logo image from the assets folder
+import logoSrc from '@/assets/logo.png';
 </script>
 
 <style scoped>
-/* Ajoute des styles spécifiques si nécessaire */
+/* Add any specific styles for the logo component */
 </style>

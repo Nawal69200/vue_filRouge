@@ -1,3 +1,4 @@
+<!-- App.vue -->
 <template>
   <div id="app">
     <header>
@@ -17,9 +18,7 @@
           </button>
 
           <!-- Logo -->
-          <router-link class="navbar-brand" to="/">
-            <img src="@/components/icons/logo.png" alt="logo" />
-          </router-link>
+          <LogoComponent />
 
           <!-- Dropdown Menu -->
           <DropdownMenu />
@@ -49,23 +48,41 @@
         </div>
       </nav>
     </header>
+
+    <!-- Main Content Area -->
     <main>
+      <VideoPlayer />
       <router-view />
     </main>
+
+    <!-- Cookie Consent Banner -->
+    <VueCookieBanner />
+
+    <!-- Footer -->
     <footer />
   </div>
 </template>
 
 <script>
-// Importation des composants
-import DropdownMenu from './components/DropdownMenu.vue';
-import SearchButton from './components/SearchButton.vue';
+// Import des composants nécessaires
+import DropdownMenu from '@/components/DropdownMenu.vue';
+import SearchButton from '@/components/SearchButton.vue';
+import VueCookieBanner from '@/components/VueCookieBanner.vue'; 
+import VideoPlayer from '@/components/VideoPlayer.vue';
+import LogoComponent from '@/components/LogoComponent.vue';
 
 export default {
-  name: 'App',
+  name: 'AppComponent',
   components: {
     DropdownMenu,
     SearchButton,
+    VueCookieBanner,
+    VideoPlayer,
+    LogoComponent,
   },
 };
 </script>
+
+<style scoped>
+/* Ajoutez des styles spécifiques pour le composant App si nécessaire */
+</style>

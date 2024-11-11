@@ -21,7 +21,7 @@
 
 <script setup>
 // Importation du composant Logo.vue
-import Logo from './Logo.vue';
+import Logo from './LogoComponent.vue';
 </script>
 
 <style scoped>
