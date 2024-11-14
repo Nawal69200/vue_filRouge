@@ -1,0 +1,84 @@
+[
+    {
+      "slug": "boeuf_saute",
+      "title": "Boeuf sauté aux légumes et graines de sésame",
+      "image": "/assets/boeuf_saute.jpg",
+      "alt": "Boeuf sauté aux légumes",
+      "description": "Découvrez notre délicieux Bœuf Sauté aux Légumes et Graines de Sésame...",
+      "reviews": 12,
+      "rating": 4
+    },
+    {
+      "slug": "sushis",
+      "title": "Sushis frais et délicieux",
+      "image": "/assets/sushis.jpg",
+      "alt": "Assiette de sushis",
+      "description": "Recette de sushis frais et délicieux. Idéale pour débuter votre repas.",
+      "reviews": 15,
+      "rating": 4
+    },
+    {
+      "slug": "chakchouka",
+      "title": "Chakchouka",
+      "image": "/assets/chakchouka.jpg",
+      "alt": "Chakchouka aux légumes",
+      "description": "Une recette de chakchouka, un plat savoureux de légumes.",
+      "reviews": 10,
+      "rating": 5
+    },
+    {
+      "slug": "tarte_coco",
+      "title": "Tarte Coco",
+      "image": "/assets/tarte_coco.jpg",
+      "alt": "Tarte à la noix de coco",
+      "description": "Tarte légère à la noix de coco, parfaite pour le dessert.",
+      "reviews": 8,
+      "rating": 4
+    },
+    {
+      "slug": "mojito_orange",
+      "title": "Mojito à l'orange",
+      "image": "/assets/mojito_orange.jpg",
+      "alt": "Mojito à l'orange",
+      "description": "Un délicieux mojito à l'orange pour un goût rafraîchissant.",
+      "reviews": 18,
+      "rating": 5
+    },
+    {
+      "slug": "nouilles_crevettes",
+      "title": "Nouilles aux crevettes",
+      "image": "/assets/nouilles_crevettes.jpg",
+      "alt": "Nouilles aux crevettes",
+      "description": "Des nouilles aux crevettes pour un repas asiatique rapide.",
+      "reviews": 12,
+      "rating": 4
+    },
+    {
+      "slug": "pates_creme",
+      "title": "Pâtes à la crème",
+      "image": "/assets/pates_creme.jpg",
+      "alt": "Pâtes crémeuses",
+      "description": "Pâtes crémeuses, l'idéal pour un dîner copieux.",
+      "reviews": 25,
+      "rating": 5
+    },
+    {
+      "slug": "burger",
+      "title": "Burger maison",
+      "image": "/assets/burger.jpg",
+      "alt": "Burger maison avec fromage",
+      "description": "Un burger maison à la viande juteuse et au fromage fondant.",
+      "reviews": 30,
+      "rating": 5
+    },
+    {
+      "slug": "salade_poulet_grille",
+      "title": "Salade de poulet grillé",
+      "image": "/assets/salade_poulet_grille.jpg",
+      "alt": "Salade de poulet grillé",
+      "description": "Une salade saine avec du poulet grillé et des légumes frais.",
+      "reviews": 20,
+      "rating": 4
+    }
+  ]
+  

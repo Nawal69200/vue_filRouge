@@ -63,6 +63,15 @@ export default {
       currentRecipeIndex: 0,  // Index de la recette actuellement sélectionnée
 
       recipes: [
+      {
+    "slug": "boeuf_saute",
+    "title": "Boeuf sauté aux légumes et graines de sésame",
+    "image": "/assets/boeuf_saute.jpg",
+    "alt": "Boeuf sauté aux légumes",
+    "description": "Découvrez notre délicieux Bœuf Sauté aux Légumes et Graines de Sésame...",
+    "reviews": 12,
+    "rating": 4
+  },
         {
           title: 'Boeuf sauté aux légumes et graines de sésame',
           rating: 4,

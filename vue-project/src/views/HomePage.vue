@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <div class="text-center">
-      <h1>Explorez, cuisinez, dégustez</h1>
+      <h1 class="p-4">Explorez, cuisinez, dégustez</h1>
       <p>Les meilleures recettes à portée de clic !</p>
     </div>
     <hr>
