@@ -9,8 +9,9 @@
     <!-- Recette de la semaine -->
     <RecipeCard :recipe="recipeOfTheWeek" />
 
-     <!-- Carousel et catégories de recettes -->
-     <AppCarousel :slides="carouselSlides" /> 
+    <!-- Carousel et catégories de recettes -->
+    <AppCarousel :slides="carouselSlides" /> 
+
     <div class="container my-5">
       <div class="row text-center">
         <RecipeCategoryCard
@@ -45,7 +46,6 @@
       :recipes="popularRecipes"
     />
 
-
     <!-- Derniers Ajouts -->
     <LastRecipe 
       :image="lastRecipe.image"
@@ -63,6 +63,7 @@
 </template>
 
 <script>
+// Importation des composants nécessaires
 import RecipeCard from '@/components/RecipeCard.vue';
 import LastRecipe from '@/components/LastRecipe.vue';
 import AppCarousel from '@/components/AppCarousel.vue';
@@ -71,7 +72,7 @@ import VideoPlayer from '@/components/VideoPlayer.vue';
 import RecipeCardSection from '@/components/RecipeCardSection.vue';
 import NewsletterForm from '@/components/NewsletterForm.vue';
 
-// Import des images
+// Importation des images (si nécessaire)
 import boeufSauteImage from '@/assets/boeuf_saute.jpg';
 import noixImage from '@/assets/noix.jpg';
 import avocatsImage from '@/assets/avocats.jpg';
@@ -218,5 +219,3 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>

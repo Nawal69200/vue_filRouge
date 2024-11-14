@@ -98,7 +98,7 @@
 
 <script>
 export default {
-  name: "Inscription", 
+  name: "InscriptionForm", 
   data() {
     return {
       username: "",

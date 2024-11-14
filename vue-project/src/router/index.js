@@ -8,7 +8,7 @@ import GalleryPhotos from '@/views/GalleryPhotos.vue';
 import Favorites from '@/views/Favorites.vue';
 import Contact from '@/views/Contact.vue';
 import EventForm from '@/components/EventForm.vue';
-import RecipePage from '@/views/RecipePage.vue';
+import RecipePage from '@/views/RecipePage.vue'; // Page pour afficher les recettes
 import UseCondition from '@/components/UseCondition.vue';
 import PrivacyPolicy from '@/components/PrivacyPolicy.vue';
 import AvocadoContent from '@/views/AvocadoContent.vue';
@@ -19,18 +19,7 @@ import PeppersContent from '@/views/PeppersContent.vue';
 import Connexion from '@/views/Connexion.vue';
 import Inscription from '@/views/Inscription.vue';
 
-// Import des données de recettes
-import recipeData from '@/data/data.json';
-
-// Générer dynamiquement les routes spécifiques aux recettes
-const recipeRoutes = recipeData.map(recipe => ({
-  path: `/recettes/${recipe.slug}`,
-  name: recipe.slug,
-  component: RecipePage,
-  props: { slug: recipe.slug }
-}));
-
-// Définition des routes principales
+// Définir les routes principales
 const routes = [
   { path: '/', name: 'homePage', component: HomePage },
   { path: '/accueil', redirect: '/' },
@@ -43,19 +32,18 @@ const routes = [
   { path: '/politique-de-confidentialite', name: 'privacyPolicy', component: PrivacyPolicy },
   { path: '/conditions-utilisation', name: 'useCondition', component: UseCondition },
   { path: '/soumettre-evenement', name: 'eventForm', component: EventForm },
-  { path: '/recettes/:slug', name: 'recipePage', component: RecipePage, props: true },
   { path: '/avocat', name: 'avocadoContent', component: AvocadoContent },
   { path: '/noix', name: 'nutContent', component: NutContent },
   { path: '/piments', name: 'peppersContent', component: PeppersContent },
 
-  // Ajout des routes spécifiques pour les recettes
-  ...recipeRoutes
+  // Ajouter une route dynamique pour les recettes
+  { path: '/recettes/:slug', name: 'recipePage', component: RecipePage, props: true }
 ];
 
 // Création du router
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes,
+  routes
 });
 
 export default router;
