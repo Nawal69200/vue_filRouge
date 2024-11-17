@@ -1,21 +1,25 @@
 // Importation du Vue Router pour Vue 3
 import { createRouter, createWebHistory } from 'vue-router';
 
-// Importation des vues (pages principales)
+// Importation des vues principales
 import HomePage from '@/views/HomePage.vue';
 import Events from '@/views/Events.vue';
 import GalleryPhotos from '@/views/GalleryPhotos.vue';
-import Favorites from '@/views/Favorites.vue';
+import FavoritePages from '@/views/FavoritePages.vue';
 import Contact from '@/views/Contact.vue';
+import RecipePage from '@/views/RecipePage.vue';
+
+// Importation des composants spécifiques
 import EventForm from '@/components/EventForm.vue';
-import RecipePage from '@/views/RecipePage.vue'; // Page pour afficher les recettes
 import UseCondition from '@/components/UseCondition.vue';
 import PrivacyPolicy from '@/components/PrivacyPolicy.vue';
+
+// Importation des pages spécifiques
 import AvocadoContent from '@/views/AvocadoContent.vue';
 import NutContent from '@/views/NutContent.vue';
 import PeppersContent from '@/views/PeppersContent.vue';
 
-// Import des vues Connexion et Inscription
+// Importation des pages Connexion et Inscription
 import Connexion from '@/views/Connexion.vue';
 import Inscription from '@/views/Inscription.vue';
 
@@ -25,7 +29,7 @@ const routes = [
   { path: '/accueil', redirect: '/' },
   { path: '/evenements', name: 'evenements', component: Events },
   { path: '/gallerie_photos', name: 'gallerie_photos', component: GalleryPhotos },
-  { path: '/favoris', name: 'favoris', component: Favorites },
+  { path: '/favoris', name: 'favoris', component: FavoritePages },
   { path: '/contact', name: 'contact', component: Contact },
   { path: '/connexion', name: 'connexion', component: Connexion },
   { path: '/inscription', name: 'inscription', component: Inscription },
@@ -37,13 +41,13 @@ const routes = [
   { path: '/piments', name: 'peppersContent', component: PeppersContent },
 
   // Ajouter une route dynamique pour les recettes
-  { path: '/recettes/:slug', name: 'recipePage', component: RecipePage, props: true }
+  { path: '/recettes/:slug', name: 'recipePage', component: RecipePage, props: true },
 ];
 
 // Création du router
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes
+  routes,
 });
 
 export default router;

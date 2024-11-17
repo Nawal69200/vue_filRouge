@@ -32,7 +32,7 @@
               
               <!-- Lien vers la recette -->
               <div class="mt-3">
-                <router-link :to="recipe.link" class="btn btn-warning">Voir la recette</router-link>
+                <a :href="link" class="btn btn-warning mt-3">Voir la recette</a>
               </div>
             </div>
           </div>

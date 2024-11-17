@@ -1,84 +1,81 @@
 [
-    {
-      "slug": "boeuf_saute",
-      "title": "Boeuf sauté aux légumes et graines de sésame",
-      "image": "/assets/boeuf_saute.jpg",
-      "alt": "Boeuf sauté aux légumes",
-      "description": "Découvrez notre délicieux Bœuf Sauté aux Légumes et Graines de Sésame...",
-      "reviews": 12,
-      "rating": 4
+  {
+    "slug": "boeuf_saute",
+    "title": "Boeuf sauté aux légumes et graines de sésame",
+    "image": "/src/assets/boeuf_saute.jpg",
+    "alt": "Boeuf sauté",
+    "reviews": 12,
+    "description": "Un plat savoureux à base de boeuf et de légumes frais, idéal pour un repas rapide et équilibré.",
+    "ingredients": [
+      "500g de bœuf (type sauté)",
+      "1 poivron rouge",
+      "1 carotte",
+      "1 brocoli",
+      "2 cuillères à soupe de graines de sésame",
+      "3 cuillères à soupe de sauce soja",
+      "1 cuillère à soupe de miel",
+      "2 gousses d'ail",
+      "1 cuillère à soupe de gingembre râpé",
+      "Huile de cuisson",
+      "Sel et poivre"
+    ],
+    "steps": [
+      { "title": "Étape 1 : Préparer les ingrédients", "content": "Commencez par préparer tous les ingrédients. Coupez les morceaux de bœuf en cubes de taille uniforme pour une cuisson homogène. Lavez et découpez les légumes : coupez les poivrons en lanières, les carottes en rondelles et le brocoli en petits bouquets." },
+      { "title": "Étape 2 : Dorer le bœuf", "content": "Faire chauffer un peu d'huile dans une grande poêle à feu moyen. Lorsque l'huile est chaude, ajoutez les morceaux de bœuf et faites-les dorer de tous les côtés jusqu'à ce qu'ils soient bien caramélisés. Retirez les morceaux de bœuf de la poêle et réservez-les dans un plat." },
+      { "title": "Étape 3 : Sauter les légumes", "content": "Dans la même poêle, ajoutez un peu d'huile si nécessaire. Ajoutez les légumes coupés (poivrons, carottes, brocolis) et faites-les sauter à feu moyen-élevé. Remuez fréquemment jusqu'à ce qu'ils soient tendres mais encore croquants. Vous pouvez ajouter un peu d'eau pour aider à la cuisson des légumes si nécessaire." },
+      { "title": "Étape 4 : Ajouter les épices et les graines de sésame", "content": "Incorporez les graines de sésame grillées, le gingembre râpé et l'ail émincé aux légumes. Faites sauter pendant une minute pour libérer les arômes. Assurez-vous que les graines de sésame soient bien réparties et que les épices couvrent uniformément les légumes." },
+      { "title": "Étape 5 : Déglacer et mijoter", "content": "Remettez les morceaux de bœuf dans la poêle avec les légumes. Ajoutez la sauce soja, le miel, et un peu d'eau pour déglacer la poêle. Remuez bien pour que la sauce enrobe les morceaux de bœuf et les légumes. Laissez mijoter pendant environ 5 minutes jusqu'à ce que la sauce épaississe légèrement et enrobe bien le mélange." },
+      { "title": "Étape 6 : Finaliser et servir", "content": "Goûtez la sauce et rectifiez l'assaisonnement avec du sel et du poivre si nécessaire. Vous pouvez également ajouter un peu de sauce soja ou de miel selon vos préférences. Servez chaud avec du riz basmati ou des nouilles asiatiques. Garnissez avec des oignons verts hachés ou des feuilles de coriandre si désiré." },
+      { "title": "Étape 7 : Conseils et variantes", "content": "Pour varier les saveurs, vous pouvez ajouter des champignons shiitake ou des pousses de bambou dans la poêle. Si vous aimez les plats épicés, n'hésitez pas à ajouter un peu de piment rouge ou de sauce chili pendant la cuisson. Pour une option sans gluten, utilisez de la sauce soja sans gluten." }
+    ],
+    "information": {
+      "prepTime": 20,
+      "cookTime": 15,
+      "servings": 4
     },
-    {
-      "slug": "sushis",
-      "title": "Sushis frais et délicieux",
-      "image": "/assets/sushis.jpg",
-      "alt": "Assiette de sushis",
-      "description": "Recette de sushis frais et délicieux. Idéale pour débuter votre repas.",
-      "reviews": 15,
-      "rating": 4
+    "comments": [
+      { "id": 1, "text": "Un plat délicieux ! Je le recommande vivement.", "date": "15 juin 2024 à 14:35", "author": "Marie69", "rating": 4 },
+      { "id": 2, "text": "Excellent ! Très facile à préparer et savoureux.", "date": "10 juin 2023 à 09:22", "author": "JeanDupont", "rating": 5 }
+    ]
+  },
+  {
+    "slug": "sushis",
+    "title": "Sushis",
+    "image": "/src/assets/sushis2.jpg",
+    "alt": "sushis",
+    "rating": 3,
+    "reviews": 15,
+    "description": "Recette de sushis. Idéale pour débuter votre repas.",
+    "ingredients": [
+      "500g de riz à sushi",
+      "300g de saumon frais",
+      "200g de thon frais",
+      "1 concombre",
+      "5 feuilles de nori",
+      "50ml de vinaigre de riz",
+      "2 cuillères à soupe de sucre",
+      "1 cuillère à café de sel",
+      "Wasabi",
+      "Sauce soja",
+      "Gingembre mariné"
+    ],
+    "steps": [
+      { "title": "Étape 1 : Préparer les ingrédients", "content": "Commencez par préparer tous les ingrédients. Rincez le riz à sushi sous l'eau froide jusqu'à ce que l'eau soit claire. Laissez égoutter pendant environ 30 minutes." },
+      { "title": "Étape 2 : Cuire le riz", "content": "Faites cuire le riz à sushi dans un cuiseur à riz ou dans une casserole avec de l'eau. Une fois cuit, mélangez-le délicatement avec du vinaigre de riz, du sucre et du sel. Laissez refroidir." },
+      { "title": "Étape 3 : Préparer les garnitures", "content": "Coupez le poisson cru (saumon, thon) en fines tranches. Coupez les légumes (concombre, avocat) en fines lanières." },
+      { "title": "Étape 4 : Rouler les sushis", "content": "Placez une feuille de nori sur une natte en bambou. Étalez une couche de riz sur la feuille de nori, en laissant une bordure libre en haut. Disposez les garnitures sur le riz. Roulez fermement à l'aide de la natte en bambou." },
+      { "title": "Étape 5 : Couper les rouleaux", "content": "Utilisez un couteau bien aiguisé pour couper les rouleaux en morceaux de taille égale. Essuyez le couteau avec un chiffon humide entre chaque coupe pour des tranches nettes." },
+      { "title": "Étape 6 : Servir", "content": "Disposez les sushis sur un plat de service. Servez avec de la sauce soja, du wasabi et du gingembre mariné. Dégustez immédiatement pour une fraîcheur optimale." },
+      { "title": "Étape 7 : Conseils et variantes", "content": "Pour varier, vous pouvez ajouter des crevettes, des œufs de saumon ou des légumes marinés. Pour les végétariens, utilisez des légumes comme les carottes et les radis. Soyez créatif avec les combinaisons de garnitures !" }
+    ],
+    "information": {
+      "prepTime": 30,
+      "cookTime": 20,
+      "servings": 4
     },
-    {
-      "slug": "chakchouka",
-      "title": "Chakchouka",
-      "image": "/assets/chakchouka.jpg",
-      "alt": "Chakchouka aux légumes",
-      "description": "Une recette de chakchouka, un plat savoureux de légumes.",
-      "reviews": 10,
-      "rating": 5
-    },
-    {
-      "slug": "tarte_coco",
-      "title": "Tarte Coco",
-      "image": "/assets/tarte_coco.jpg",
-      "alt": "Tarte à la noix de coco",
-      "description": "Tarte légère à la noix de coco, parfaite pour le dessert.",
-      "reviews": 8,
-      "rating": 4
-    },
-    {
-      "slug": "mojito_orange",
-      "title": "Mojito à l'orange",
-      "image": "/assets/mojito_orange.jpg",
-      "alt": "Mojito à l'orange",
-      "description": "Un délicieux mojito à l'orange pour un goût rafraîchissant.",
-      "reviews": 18,
-      "rating": 5
-    },
-    {
-      "slug": "nouilles_crevettes",
-      "title": "Nouilles aux crevettes",
-      "image": "/assets/nouilles_crevettes.jpg",
-      "alt": "Nouilles aux crevettes",
-      "description": "Des nouilles aux crevettes pour un repas asiatique rapide.",
-      "reviews": 12,
-      "rating": 4
-    },
-    {
-      "slug": "pates_creme",
-      "title": "Pâtes à la crème",
-      "image": "/assets/pates_creme.jpg",
-      "alt": "Pâtes crémeuses",
-      "description": "Pâtes crémeuses, l'idéal pour un dîner copieux.",
-      "reviews": 25,
-      "rating": 5
-    },
-    {
-      "slug": "burger",
-      "title": "Burger maison",
-      "image": "/assets/burger.jpg",
-      "alt": "Burger maison avec fromage",
-      "description": "Un burger maison à la viande juteuse et au fromage fondant.",
-      "reviews": 30,
-      "rating": 5
-    },
-    {
-      "slug": "salade_poulet_grille",
-      "title": "Salade de poulet grillé",
-      "image": "/assets/salade_poulet_grille.jpg",
-      "alt": "Salade de poulet grillé",
-      "description": "Une salade saine avec du poulet grillé et des légumes frais.",
-      "reviews": 20,
-      "rating": 4
-    }
-  ]
-  
+    "comments": [
+      { "id": 3, "text": "Des sushis vraiment savoureux et frais. La recette est simple à suivre et le résultat est digne d'un restaurant japonais.", "date": "20 juillet 2024 à 18:45", "author": "SushiLover89", "rating": 4 },
+      { "id": 4, "text": "Excellente recette ! Les sushis sont parfaits pour une soirée entre amis. J'ai ajouté des crevettes et c'était délicieux.", "date": "15 juillet 2024 à 12:30", "author": "KimSushi", "rating": 5 }
+    ]
+  }
+]

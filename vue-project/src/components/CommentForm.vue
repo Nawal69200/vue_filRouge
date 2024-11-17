@@ -15,7 +15,7 @@
         />
       </div>
       <div class="mb-3">
-        <label for="email" class="form-label">Adresse e-mail</label>
+        <label for="email" class="form-label">Adresse e-mail </label>
         <input
           v-model="form.email"
           type="email"

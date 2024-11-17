@@ -1,28 +1,28 @@
 <template>
-  <div class="card">
+  <div class="card my-3">
     <div class="card-body">
+      <!-- Étapes de préparation -->
       <h3 class="mb-3 text-center">Préparation</h3>
       <div v-for="(step, index) in steps" :key="index" class="mb-4">
         <h5>{{ step.title }}</h5>
-        <p>{{ step.description }}</p>
+        <p>{{ step.content }}</p>
       </div>
     </div>
-    </div>
-      
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'StepDescription',
+  name: 'RecipeDescription',
   props: {
     steps: {
       type: Array,
-      required: true,
-  
+      required: true, // Les étapes sont toujours nécessaires
     }
   }
 };
 </script>
 
 <style scoped>
+
 </style>

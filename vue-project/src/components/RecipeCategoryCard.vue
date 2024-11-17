@@ -12,8 +12,7 @@
             <span class="ms-2">({{ reviews }} avis)</span>
           </div>
           <div class="mt-3 text-center">
-            <!-- Lien dynamique vers la page de recette avec slug -->
-            <router-link :to="'/recettes/' + slug" class="btn btn-warning mt-3">Voir la recette</router-link>
+            <a :href="link" class="btn btn-warning mt-3">Voir la recette</a>
           </div>
         </div>
       </div>

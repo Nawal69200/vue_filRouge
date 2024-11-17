@@ -21,13 +21,11 @@
     </div>
     <p v-else>Aucun favori pour le moment.</p>
 
-    <RecipeDetail @add-to-favorites="addToFavorites" />
+    <RecipePage :recipe="favorites[0]" />
   </main>
 </template>
 
 <script>
-import RecipeDetail from '@/components/RecipeDetail.vue';
-
 // Images importées pour Vite
 import boeufImage from '@/assets/boeuf_saute.jpg';
 import sushiImage from '@/assets/sushis2.jpg';
@@ -36,10 +34,13 @@ import burgerImage from '@/assets/burger.jpg';
 import nouillesImage from '@/assets/nouilles.jpg';
 import saladePouletImage from '@/assets/salade_poulet-grille.jpg';
 
+// Importation du composant RecipePage
+import RecipePage from '@/views/RecipePage.vue';
+
 export default {
-  name: 'Favorites',
+  name: 'FavoritePages',
   components: {
-    RecipeDetail,
+    RecipePage, // Ajout du composant RecipePage
   },
   data() {
     return {

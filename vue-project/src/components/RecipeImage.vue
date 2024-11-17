@@ -25,7 +25,4 @@ export default {
 </script>
 
 <style scoped>
-  .card-img-top2 {
-    height: 150px; 
-}
 </style>

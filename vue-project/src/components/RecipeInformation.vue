@@ -22,31 +22,23 @@
 
 <script>
 export default {
-  name: 'Informations',
+  name: 'RecipeInformation',
   props: {
-    prepTime: {
-      type: Number,
-      required: true,
-    },
-    cookTime: {
-      type: Number,
-      required: true,
-    },
-    servings: {
-      type: Number,
-      required: true,
-    },
-    favoritesLink: {
-      type: String,
-      required: true,
-    },
+  prepTime: {
+    type: [Number, String],
+    required: true,
   },
-  methods: {
-    printRecipe() {
-      window.print();
-    },
+  cookTime: {
+    type: [Number, String],
+    required: true,
   },
-};
+  servings: {
+    type: [Number, String],
+    required: true,
+  }
+}
+}
+
 </script>
 
 <style scoped>
